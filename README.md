@@ -1,17 +1,30 @@
-# course-materials-f2025
+<!-- FACULTY & INSTRUCTORS: replace the content below with a real, student-facing
+     overview of your course materials. Release materials with the 'include README'
+     toggle copies THIS file into the cohort's materials repo, where enrolled
+     students read it - so write it for them, not as internal notes. How this source
+     repo is structured, and how to operate it, is in MAINTAINING.md (for faculty &
+     instructors only - never released to students). -->
 
-Course materials - the source for the **Release materials** action.
+# Course materials
 
-## Structure
+> **Replace this placeholder.** This file becomes the students' README for the
+> released materials. Add a short overview of the course, how the materials are
+> organised, and anything students should read first.
 
-Any top-level directory containing at least one ordinal-prefixed subdirectory (`00_`, `01_`, `02_`, ...) is a releasable section - no config to declare it:
+---
 
-- `lectures/00_session-1/` - one folder per session's lecture files
-- `readings/00_session-1/` - one folder per session's readings
-- `*syllabus*`, this `README.md` (root) - released via the syllabus / README toggles
+## For faculty & instructors (delete this section before releasing the README)
 
-Add more sessions by creating `lectures/01_session-2/`, `readings/01_session-2/`, ... (only the ordinal prefix matters - name the rest whatever you like), or add a whole new section (e.g. `labs/00_intro/`) - then run **Refresh actions** so the session dropdown and Release button's section toggles pick it up.
+- **How to populate & operate this repo:** see [`MAINTAINING.md`](MAINTAINING.md) - it explains what to edit, what gets released to students, and what to leave alone. `MAINTAINING.md` is **not** deployed to the cohort org; leave it here as a persistent reference.
+- **Available actions:** The course org's [`.github` Actions tab](https://github.com/DSL-Demo-Course-E1234/.github/actions) hosts the buttons that operate this course:
 
-## Public course website (optional)
+| Action | What it does |
+| --- | --- |
+| **Release materials** | Copy session folders (+ optional syllabus/README) into a cohort's `materials` repo. |
+| **Release assignment** | Freeze an assignment template, then generate one private repo per student. |
+| **New materials repo** | Scaffold another structured materials repo. |
+| **New assignment** | Scaffold an assignment template (starter + hidden autograder). |
+| **Refresh actions** | Re-seed the run-from-repo buttons and repopulate dropdowns after you add sessions/sections. |
+| **Show status** | Read-only per-cohort checklist of what's configured. |
 
-The **Publish course website** action can share this repo's materials on a public open-courseware site. Lecture files are always hosted; for readings you choose `reading-list` (text/citation files are shown as a list - keep copyrighted PDFs out of the list by leaving them as non-text files) or `actual-readings` (every reading file is hosted and downloadable - you carry the copyright responsibility).
+(**Release materials** and **Release assignment** also appear in this repo's own Actions tab.)
